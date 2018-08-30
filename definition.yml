@@ -1,6 +1,6 @@
 id: celltree_vem
-docker_repository: dynverse/dynmethods:celltree_vem
-container_url: https://github.com/dynverse/dynmethods/tree/master/containers/celltree_vem
+docker_repository: dynverse/ti_celltree_vem
+container_url: https://github.com/dynverse/ti_celltree_vem
 name: cellTree with vem
 type: algorithm
 platform: R

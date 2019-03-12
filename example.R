@@ -3,7 +3,7 @@
 # generate dataset with certain seed
 set.seed(1)
 data <- dyntoy::generate_dataset(
-  id = "specific_example/celltree_gibbs",
+  id = "specific_example/celltree_vem",
   num_cells = 99,
   num_features = 101,
   model = "linear",
@@ -11,9 +11,8 @@ data <- dyntoy::generate_dataset(
 )
 
 # add method specific args (if needed)
-data$params <- list(
-  tot_iter = 10
-)
+data$params <- list()
+data$seed <- 1
 
 # write example dataset to file
 file <- commandArgs(trailingOnly = TRUE)[[1]]
